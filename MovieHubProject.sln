@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D2849B2-7482-4991-B3BD-5CEB79DC1F0D}"
 EndProject
@@ -15,7 +15,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{95916141-4088-4941-BF2C-D8108E4D472C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieHub.Domain", "Core\MovieHub.Domain\MovieHub.Domain.csproj", "{E50F0F2E-B17B-4680-9F00-C91419FCA05C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieHub.Persistence", "Infrastructure\MovieHub.Persistence\MovieHub.Persistence.csproj", "{5F00C924-EB27-4543-8D79-7531A9AB90BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieHub.WebApi", "Presentation\MovieHub.WebApi\MovieHub.WebApi.csproj", "{3E92D955-0A4D-44DA-87DE-9DF03F64D2A6}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E50F0F2E-B17B-4680-9F00-C91419FCA05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E50F0F2E-B17B-4680-9F00-C91419FCA05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E50F0F2E-B17B-4680-9F00-C91419FCA05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E50F0F2E-B17B-4680-9F00-C91419FCA05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F00C924-EB27-4543-8D79-7531A9AB90BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F00C924-EB27-4543-8D79-7531A9AB90BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F00C924-EB27-4543-8D79-7531A9AB90BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F00C924-EB27-4543-8D79-7531A9AB90BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E92D955-0A4D-44DA-87DE-9DF03F64D2A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E92D955-0A4D-44DA-87DE-9DF03F64D2A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E92D955-0A4D-44DA-87DE-9DF03F64D2A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E92D955-0A4D-44DA-87DE-9DF03F64D2A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -25,5 +49,8 @@ Global
 		{B4623EE0-0343-423B-A5EA-D292248CD4E7} = {8D2849B2-7482-4991-B3BD-5CEB79DC1F0D}
 		{C68BFE1F-3D65-4ECE-BC3E-C88CF12E0A9F} = {8D2849B2-7482-4991-B3BD-5CEB79DC1F0D}
 		{95916141-4088-4941-BF2C-D8108E4D472C} = {8D2849B2-7482-4991-B3BD-5CEB79DC1F0D}
+		{E50F0F2E-B17B-4680-9F00-C91419FCA05C} = {3BF21C98-1FA4-40D5-86EA-E2DC1E39B385}
+		{5F00C924-EB27-4543-8D79-7531A9AB90BC} = {3BDB47A7-7F29-465C-AC93-AC9E4816C6A1}
+		{3E92D955-0A4D-44DA-87DE-9DF03F64D2A6} = {B4623EE0-0343-423B-A5EA-D292248CD4E7}
 	EndGlobalSection
 EndGlobal
