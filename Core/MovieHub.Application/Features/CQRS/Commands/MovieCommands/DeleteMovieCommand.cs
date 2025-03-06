@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieHub.Application.Features.CQRS.Commands.MovieCommands
 {
-    public class RemoveMovieCommand : IRequest<Unit>
+    public class DeleteMovieCommand : IRequest<Unit>
     {
         public int Id { get; set; }
     }

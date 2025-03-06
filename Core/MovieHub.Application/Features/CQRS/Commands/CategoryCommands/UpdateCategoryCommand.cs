@@ -11,5 +11,11 @@ namespace MovieHub.Application.Features.CQRS.Commands.CategoryCommands
     {
         public int Id { get; set; }
         public string CategoryName { get; set; }
+
+        public UpdateCategoryCommand(int id, string categoryName)
+        {
+            Id = id;
+            CategoryName = categoryName;
+        }
     }
 }

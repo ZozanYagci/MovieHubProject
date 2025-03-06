@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace MovieHub.Application.Features.CQRS.Commands.CategoryCommands
 {
-    public class RemoveCategoryCommand : IRequest<Unit>
+    public class DeleteCategoryCommand : IRequest<Unit>
     {
         public int Id { get; set; }
+
+
+        // zorunlu alanlar burada set edilebilir.
+        public DeleteCategoryCommand(int id)
+        {
+            Id = id;
+        }
     }
 }
