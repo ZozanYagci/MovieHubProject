@@ -11,5 +11,10 @@ namespace MovieHub.Application.Features.CQRS.Queries.MovieQueries
     public class GetMovieByIdQuery : IRequest<GetMovieByIdQueryResult>
     {
         public int Id { get; set; }
+
+        public GetMovieByIdQuery(int id)
+        {
+            Id = id;
+        }
     }
 }

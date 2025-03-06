@@ -10,5 +10,10 @@ namespace MovieHub.Application.Features.CQRS.Commands.MovieCommands
     public class DeleteMovieCommand : IRequest<Unit>
     {
         public int Id { get; set; }
+
+        public DeleteMovieCommand(int id)
+        {
+                Id = id;
+        }
     }
 }

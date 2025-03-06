@@ -25,6 +25,7 @@ namespace MovieHub.Application.Features.CQRS.Handlers.MovieHandlers
 
             return new GetMovieByIdQueryResult
             {
+                Id=movie.Id,
                 CoverImageUrl = movie.CoverImageUrl,
                 CreatedYear = movie.CreatedYear,
                 Description = movie.Description,
