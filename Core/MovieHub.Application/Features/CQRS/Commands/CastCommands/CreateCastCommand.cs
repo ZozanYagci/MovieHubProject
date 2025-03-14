@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieHub.Application.Features.CQRS.Commands.CastCommands
 {
-    public class CreateCastCommand
+    public class CreateCastCommand : IRequest
     {
         public string Title { get; set; }
         public string Name { get; set; }
