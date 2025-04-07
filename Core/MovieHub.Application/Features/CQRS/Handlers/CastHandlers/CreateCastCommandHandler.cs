@@ -20,7 +20,7 @@ namespace MovieHub.Application.Features.CQRS.Handlers.CastHandlers
         }
         public async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
         {
-            _context.Casts.Add(new Cast
+            await _context.Casts.AddAsync(new Cast
             {
                 Biography = request.Biography,
                 ImageUrl = request.ImageUrl,

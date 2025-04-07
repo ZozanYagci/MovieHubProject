@@ -1,11 +1,15 @@
 using Microsoft.OpenApi.Models;
+using MovieHub.Application.Features.CQRS.Handlers.TagHandlers;
 using MovieHub.Persistence.Context;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddDbContext<MovieContext>();
+
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetTagQueryHandler).Assembly));
 
 builder.Services.AddControllers();
 
