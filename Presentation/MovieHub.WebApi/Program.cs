@@ -1,11 +1,11 @@
 using Microsoft.OpenApi.Models;
 using MovieHub.Application.Features.CQRS.Handlers.TagHandlers;
 using MovieHub.Persistence.Context;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
 
 builder.Services.AddDbContext<MovieContext>();
 
@@ -20,6 +20,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 
+
 //builder.Services.AddOpenApi();
 
 var app = builder.Build();
@@ -32,6 +33,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Api V1");
+    });
+
+    app.MapGet("/", context =>
+    {
+        context.Response.Redirect("/swagger/index.html");
+        return Task.CompletedTask;
     });
 }
 

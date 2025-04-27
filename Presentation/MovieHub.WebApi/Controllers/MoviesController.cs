@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MovieHub.Application.Features.CQRS.Commands.MovieCommands;
 using MovieHub.Application.Features.CQRS.Queries.MovieQueries;
